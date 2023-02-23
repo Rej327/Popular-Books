@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { btnStyle, dataStyle } from "../styles/styles";
+import { text } from "../data/text";
 
 const Books = () => {
   const [Books, setBooks] = useState([]);
@@ -30,9 +31,7 @@ const Books = () => {
 
   return (
     <div className="w-full px-2">
-      <h1 className={dataStyle.hero}>
-        From the 17th century to the late 90's, I covered the classics
-      </h1>
+      <h1 className={dataStyle.hero}>{text.hero}</h1>
       <div className={dataStyle.dataSection}>
         {Books.map((book) => (
           <div className={dataStyle.dataContainer} key={book.id}>
