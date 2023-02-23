@@ -1,13 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { body } from "../styles/styles";
 
 const Navigation = () => {
   return (
-    <div className="flex py-2 px-4 mb-5 bg-slate-100">
-      <h1 className="text-2xl font-bold tracking-widest text-[#45a21a]">
-        Popular Books
-      </h1>
-      <button className="addButton ml-auto p-2">
+    <div className={body.navigationSect}>
+      <h1 className={body.navText}>Popular Books</h1>
+      <button className={body.btn}>
         <Link to="/add">Add New Book</Link>
       </button>
     </div>

@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { btnStyle } from "../styles/styles";
 
 //add data
 const Add = () => {
@@ -60,13 +61,10 @@ const Add = () => {
         name="description"
         required=""
       />
-      <button
-        onClick={handleClick}
-        className="py-2 w-full text-white my-1 bg-[#4cc713] hover:bg-opacity-80"
-      >
+      <button onClick={handleClick} className={btnStyle.add}>
         Add Book
       </button>
-      <button className="py-2 w-full text-white my-1 bg-red-600 hover:bg-opacity-80">
+      <button className={btnStyle.cancel}>
         <Link to="/">Cancel</Link>
       </button>
     </div>
