@@ -1,9 +1,11 @@
 import React from "react";
+import { text } from "../data/text";
+import { body } from "../styles/styles";
 
 const Footer = () => {
   return (
-    <div className="w-full py-4 bg-slate-100 mt-10">
-      <p className="text-center text-gray-500">© 2023. Created by Jefferson</p>
+    <div className={body.footerSection}>
+      <p className={body.footerTxt}>{text.footer}</p>
     </div>
   );
 };

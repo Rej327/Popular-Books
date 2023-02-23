@@ -20,4 +20,6 @@ export const body = {
   navigationSect: "flex py-2 px-4 mb-5 bg-slate-100",
   navText: "text-2xl font-bold tracking-widest text-[#45a21a]",
   btn: "addButton ml-auto p-2",
+  footerSection: "w-full py-4 bg-slate-100 mt-10",
+  footerTxt: "text-center text-gray-500",
 };
