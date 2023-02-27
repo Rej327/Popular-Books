@@ -65,7 +65,7 @@ const Update = () => {
         required=""
       />
       <button onClick={handleClick} className={btnStyle.add}>
-        Add Book
+        Update Book
       </button>
       <button className={btnStyle.cancel}>
         <Link to="/">Cancel</Link>
