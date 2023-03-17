@@ -49,7 +49,7 @@ const Add = () => {
       />
       <input
         type="text"
-        placeholder="cover"
+        placeholder="Cover"
         onChange={handleChange}
         name="cover"
         required

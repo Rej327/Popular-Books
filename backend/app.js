@@ -6,6 +6,14 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.listen(4000, () => {
+  console.log("Connected to backend!");
+});
+
+app.get("/", (req, res) => {
+  res.json("hello");
+});
+
 const db = mysql.createConnection({
   host: "localhost",
   user: "root",
@@ -13,10 +21,6 @@ const db = mysql.createConnection({
 });
 
 // GET ALL BOOKS
-app.get("/", (req, res) => {
-  res.json("hello");
-});
-
 app.get("/books", (req, res) => {
   const q = "SELECT * FROM books";
   db.query(q, (err, data) => {
@@ -74,8 +78,4 @@ app.put("/books/:id", (req, res) => {
     if (err) return res.send(err);
     return res.json(data);
   });
-});
-
-app.listen(4000, () => {
-  console.log("Connected to backend!");
 });

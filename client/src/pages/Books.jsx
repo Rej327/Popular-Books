@@ -30,7 +30,7 @@ const Books = () => {
   };
 
   return (
-    <div className="w-full px-2">
+    <div className="w-full px-2 mb-20">
       <h1 className={dataStyle.hero}>{text.hero}</h1>
       <div className={dataStyle.dataSection}>
         {Books.map((book) => (

@@ -24,11 +24,9 @@ const Update = () => {
   const handleClick = async (e) => {
     e.preventDefault();
     try {
-      // console.log(book, bookId);
       await axios.put(`http://localhost:4000/books/${bookId}`, book);
-      // console.log(q);
       navigate("/");
-      alert("New book succesfully updated!");
+      alert("The book succesfully updated!");
     } catch (err) {
       alert("The book is not succesfully updated!");
     }
